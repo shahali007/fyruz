@@ -1,0 +1,138 @@
+
+.yamm .nav,
+.yamm .collapse,
+.yamm .dropup,
+.yamm .dropdown {
+  position: static;
+    }
+.yamm .container {
+  position: relative;
+    }
+.yamm .dropdown-menu {
+    left: auto;
+    border: 0 none;
+    -webkit-transition: all 0.3s ease;
+       -moz-transition: all 0.3s ease;
+         -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+    }
+.yamm .yamm-content {
+    padding: 20px 30px;
+    -webkit-transition: all 0.3s ease;
+       -moz-transition: all 0.3s ease;
+         -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+    }
+.yamm .dropdown.yamm-fw .dropdown-menu .grid-demo{
+    -webkit-transition: all 0.3s ease;
+       -moz-transition: all 0.3s ease;
+         -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+    }
+.yamm .dropdown.yamm-fw .dropdown-menu {
+    border: 0 none;
+    border-radius: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    padding: 0;
+    z-index: 100;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+       -moz-transition: all 0.3s ease;
+         -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+    display: block;
+    }
+.yamm .dropdown.yamm-fw.open > .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+    }
+/* search  and dropdown css*/
+.list, .search-box, .notification {
+    background: #fff none repeat scroll 0 0;
+    opacity: 1;
+    margin-top: 0;
+    padding: 50px 85px 50px 40px;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 100%;
+    z-index: 115;
+    height:300px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    }
+.list::before,
+.search-box::before,
+.notification::before {
+    background: rgba(0, 0, 0, 0.5);
+    bottom: -250%;
+    content: "";
+    height: 250%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.search-box form {
+    margin-left: 0;
+    margin-right: 110px;
+    margin-top: 59px;
+    color: #000;
+    }
+.search-box input.form-control {
+    border: medium none;
+    box-shadow: none;
+    font-size: 50px;
+    height: auto;
+}
+.search-box input.form-control:focus {
+    box-shadow: none;
+}
+.notification .marquee {
+    width: 100%;
+    overflow: hidden;
+    padding: 15px;
+}
+.notification .marquee a {
+    display: inline-block;
+}
+/*===============================================
+            Responsive css
+===============================================*/
+/*Desktop : Medium : 1280px */
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+	
+}
+
+/*Tablet layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+	
+}
+
+/*Mobile layout: 320px. */
+@media only screen and (max-width: 767px){
+    
+    .yamm .nav, .yamm .collapse, .yamm .dropup, .yamm .dropdown {
+        display: block;
+        float: left;
+        width: 50px;
+        -webkit-transition: all 0.3s ease;
+           -moz-transition: all 0.3s ease;
+             -o-transition: all 0.3s ease;
+                transition: all 0.3s ease;
+        
+    }
+    .search-box form {
+        margin-left: 0;
+        margin-right: 25px;
+    }
+    
+}
+
+/*Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px){
+	
+}
